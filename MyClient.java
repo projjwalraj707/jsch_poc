@@ -15,7 +15,7 @@ public class MyClient {
 		Session session = jsch.getSession(USERNAME, HOST, PORT);
 		session.setPassword(PASSWORD);
 		session.setConfig("StrictHostKeyChecking", "no");
-		session.setConfig("kex", "sntrup768x25519-sha256,mlkem768x25519-sha256");
+		session.setConfig("kex", "diffie-hellman-group-exchange-sha1");
 		session.connect();
 		
 		ChannelExec channelExec = (ChannelExec) session.openChannel("exec");
