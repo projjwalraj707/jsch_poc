@@ -1,0 +1,344 @@
+root@Ideapad707:~# /usr/local/sbin/sshd -ddd -p 22
+debug1: sshd version OpenSSH_10.0, OpenSSL 3.0.13 30 Jan 2024
+debug3: Running on Linux 5.15.153.1-microsoft-standard-WSL2 #1 SMP Fri Mar 29 23:14:13 UTC 2024 x86_64
+debug3: Started with: /usr/local/sbin/sshd -ddd -p 22
+debug2: load_server_config: filename /usr/local/etc/sshd_config
+debug2: load_server_config: done config len = 3382
+debug2: parse_server_config_depth: config /usr/local/etc/sshd_config len 3382
+debug3: /usr/local/etc/sshd_config:18 setting HostKey /usr/local/etc/ssh_host_rsa_key
+debug3: /usr/local/etc/sshd_config:19 setting HostKey /usr/local/etc/ssh_host_ecdsa_key
+debug3: /usr/local/etc/sshd_config:20 setting HostKey /usr/local/etc/ssh_host_ed25519_key
+debug3: /usr/local/etc/sshd_config:41 setting AuthorizedKeysFile .ssh/authorized_keys
+debug3: /usr/local/etc/sshd_config:111 setting Subsystem sftp   /usr/local/libexec/sftp-server
+debug3: /usr/local/etc/sshd_config:120 setting KexAlgorithms mlkem768x25519-sha256
+debug3: kex names ok: [mlkem768x25519-sha256]
+debug1: private host key #0: ssh-rsa SHA256:tZI7yc4iXlsvGfd9DSJmdWGCcxsRVE1xwuq1D9O/BZM
+debug1: private host key #1: ecdsa-sha2-nistp256 SHA256:AKhkG/MYkmRtiPmPHEWzDBUE23yXTXmhjnGAFc44OaY
+debug1: private host key #2: ssh-ed25519 SHA256:gXI02X+1X3XfVAwZNIqi6EZp6aH86MEuETjOoGXPuhY
+debug1: rexec_argv[1]='-ddd'
+debug1: rexec_argv[2]='-p'
+debug1: rexec_argv[3]='22'
+debug3: using /usr/local/libexec/sshd-session for re-exec
+debug3: pack_config: d config len 3382
+debug3: pack_config: done
+debug3: oom_adjust_setup
+debug1: Set /proc/self/oom_score_adj from 0 to -1000
+debug2: fd 6 setting O_NONBLOCK
+debug1: Bind to port 22 on 0.0.0.0.
+Server listening on 0.0.0.0 port 22.
+debug2: fd 7 setting O_NONBLOCK
+debug3: sock_set_v6only: set socket 7 IPV6_V6ONLY
+debug1: Bind to port 22 on ::.
+Server listening on :: port 22.
+debug3: fd 8 is not O_NONBLOCK
+debug1: Server will not fork when running in debugging mode.
+debug1: rexec start in 8 out 8 newsock 8 config_s 9/10
+debug3: send_rexec_state: entering fd = 9 config len 3403
+debug3: send_rexec_state: done
+debug3: recv_rexec_state: entering fd = 4
+debug3: ssh_msg_recv entering
+debug3: ssh_msg_recv entering
+debug2: parse_hostkeys: privkey 0: ssh-rsa
+debug2: parse_hostkeys: pubkey 0: ssh-rsa
+debug2: parse_hostkeys: privkey 1: ecdsa-sha2-nistp256
+debug2: parse_hostkeys: pubkey 1: ecdsa-sha2-nistp256
+debug2: parse_hostkeys: privkey 2: ssh-ed25519
+debug2: parse_hostkeys: pubkey 2: ssh-ed25519
+debug3: recv_rexec_state: done
+debug2: parse_server_config_depth: config rexec len 3382
+debug3: rexec:18 setting HostKey /usr/local/etc/ssh_host_rsa_key
+debug3: rexec:19 setting HostKey /usr/local/etc/ssh_host_ecdsa_key
+debug3: rexec:20 setting HostKey /usr/local/etc/ssh_host_ed25519_key
+debug3: rexec:41 setting AuthorizedKeysFile .ssh/authorized_keys
+debug3: rexec:111 setting Subsystem sftp        /usr/local/libexec/sftp-server
+debug3: rexec:120 setting KexAlgorithms mlkem768x25519-sha256
+debug3: kex names ok: [mlkem768x25519-sha256]
+debug1: sshd-session version OpenSSH_10.0, OpenSSL 3.0.13 30 Jan 2024
+debug1: network sockets: 6, 6
+debug3: server_process_channel_timeouts: setting 0 timeouts
+debug3: channel_clear_timeouts: clearing
+Connection from 127.0.0.1 port 38384 on 127.0.0.1 port 22 rdomain ""
+debug1: Local version string SSH-2.0-OpenSSH_10.0
+debug1: Remote protocol version 2.0, remote software version JSCH_2.27.2
+debug1: compat_banner: no match: JSCH_2.27.2
+debug2: fd 6 setting O_NONBLOCK
+debug2: Network child is on pid 498
+debug3: preauth child monitor started
+debug1: network sockets: 5, 5 [preauth]
+debug3: recv_privsep_state: begin [preauth]
+debug3: mm_get_state: entering [preauth]
+debug3: mm_request_send: entering, type 51 [preauth]
+debug3: mm_get_state: waiting for MONITOR_ANS_STATE [preauth]
+debug3: mm_request_receive_expect: entering, type 52 [preauth]
+debug3: mm_request_receive: entering [preauth]
+debug3: mm_request_receive: entering
+debug3: monitor_read: checking request 51
+debug1: mm_answer_state: config len 3382
+debug3: mm_request_send: entering, type 52
+debug3: mm_answer_state: done
+debug2: monitor_read: 51 used once, disabling now
+debug3: mm_get_state: done [preauth]
+debug2: parse_hostkeys: key 0: ssh-rsa [preauth]
+debug2: parse_hostkeys: key 1: ecdsa-sha2-nistp256 [preauth]
+debug2: parse_hostkeys: key 2: ssh-ed25519 [preauth]
+debug3: recv_privsep_state: done [preauth]
+debug2: parse_server_config_depth: config rexec len 3382 [preauth]
+debug3: rexec:18 setting HostKey /usr/local/etc/ssh_host_rsa_key [preauth]
+debug3: rexec:19 setting HostKey /usr/local/etc/ssh_host_ecdsa_key [preauth]
+debug3: rexec:20 setting HostKey /usr/local/etc/ssh_host_ed25519_key [preauth]
+debug3: rexec:41 setting AuthorizedKeysFile .ssh/authorized_keys [preauth]
+debug3: rexec:111 setting Subsystem sftp        /usr/local/libexec/sftp-server [preauth]
+debug3: rexec:120 setting KexAlgorithms mlkem768x25519-sha256 [preauth]
+debug3: kex names ok: [mlkem768x25519-sha256] [preauth]
+debug1: sshd-auth version OpenSSH_10.0, OpenSSL 3.0.13 30 Jan 2024
+debug3: server_process_channel_timeouts: setting 0 timeouts [preauth]
+debug3: channel_clear_timeouts: clearing [preauth]
+debug3: fd 5 is O_NONBLOCK [preauth]
+debug3: ssh_sandbox_init: preparing seccomp filter sandbox [preauth]
+debug3: privsep user:group 999:989 [preauth]
+debug1: permanently_set_uid: 999/989 [preauth]
+debug3: ssh_sandbox_child: setting PR_SET_NO_NEW_PRIVS [preauth]
+debug3: ssh_sandbox_child: attaching seccomp filter program [preauth]
+debug3: append_hostkey_type: ssh-rsa key not permitted by HostkeyAlgorithms [preauth]
+debug1: list_hostkey_types: rsa-sha2-512,rsa-sha2-256,ecdsa-sha2-nistp256,ssh-ed25519 [preauth]
+debug3: send packet: type 20 [preauth]
+debug1: SSH2_MSG_KEXINIT sent [preauth]
+debug3: receive packet: type 20 [preauth]
+debug1: SSH2_MSG_KEXINIT received [preauth]
+debug2: local server KEXINIT proposal [preauth]
+debug2: KEX algorithms: mlkem768x25519-sha256,ext-info-s,kex-strict-s-v00@openssh.com [preauth]
+debug2: host key algorithms: rsa-sha2-512,rsa-sha2-256,ecdsa-sha2-nistp256,ssh-ed25519 [preauth]
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr [preauth]
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr [preauth]
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1 [preauth]
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1 [preauth]
+debug2: compression ctos: none,zlib@openssh.com [preauth]
+debug2: compression stoc: none,zlib@openssh.com [preauth]
+debug2: languages ctos:  [preauth]
+debug2: languages stoc:  [preauth]
+debug2: first_kex_follows 0  [preauth]
+debug2: reserved 0  [preauth]
+debug2: peer client KEXINIT proposal [preauth]
+debug2: KEX algorithms: sntrup768x25519-sha256,mlkem768x25519-sha256,ext-info-c,kex-strict-c-v00@openssh.com [preauth]
+debug2: host key algorithms: ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,rsa-sha2-512,rsa-sha2-256 [preauth]
+debug2: ciphers ctos: aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr [preauth]
+debug2: ciphers stoc: aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr [preauth]
+debug2: MACs ctos: hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1 [preauth]
+debug2: MACs stoc: hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1 [preauth]
+debug2: compression ctos: none [preauth]
+debug2: compression stoc: none [preauth]
+debug2: languages ctos:  [preauth]
+debug2: languages stoc:  [preauth]
+debug2: first_kex_follows 0  [preauth]
+debug2: reserved 0  [preauth]
+debug3: kex_choose_conf: will use strict KEX ordering [preauth]
+debug1: kex: algorithm: mlkem768x25519-sha256 [preauth]
+debug1: kex: host key algorithm: ssh-ed25519 [preauth]
+debug1: kex: client->server cipher: aes128-gcm@openssh.com MAC: <implicit> compression: none [preauth]
+debug1: kex: server->client cipher: aes128-gcm@openssh.com MAC: <implicit> compression: none [preauth]
+debug1: expecting SSH2_MSG_KEX_ECDH_INIT [preauth]
+debug3: receive packet: type 30 [preauth]
+debug1: SSH2_MSG_KEX_ECDH_INIT received [preauth]
+debug3: mm_sshkey_sign: entering [preauth]
+debug3: mm_request_send: entering, type 6 [preauth]
+debug3: mm_sshkey_sign: waiting for MONITOR_ANS_SIGN [preauth]
+debug3: mm_request_receive_expect: entering, type 7 [preauth]
+debug3: mm_request_receive: entering [preauth]
+debug3: mm_request_receive: entering
+debug3: monitor_read: checking request 6
+debug3: mm_answer_sign: entering
+debug1: mm_answer_sign: hostkey ssh-ed25519 index 2
+debug3: mm_answer_sign: ssh-ed25519 KEX signature len=83
+debug3: mm_request_send: entering, type 7
+debug2: monitor_read: 6 used once, disabling now
+debug3: mm_sshkey_sign: ssh-ed25519 signature len=83 [preauth]
+debug3: send packet: type 31 [preauth]
+debug3: send packet: type 21 [preauth]
+debug1: ssh_packet_send2_wrapped: resetting send seqnr 3 [preauth]
+debug2: ssh_set_newkeys: mode 1 [preauth]
+debug1: rekey out after 4294967296 blocks [preauth]
+debug1: SSH2_MSG_NEWKEYS sent [preauth]
+debug1: Sending SSH2_MSG_EXT_INFO [preauth]
+debug3: send packet: type 7 [preauth]
+debug1: expecting SSH2_MSG_NEWKEYS [preauth]
+debug3: receive packet: type 21 [preauth]
+debug1: ssh_packet_read_poll2: resetting read seqnr 3 [preauth]
+debug1: SSH2_MSG_NEWKEYS received [preauth]
+debug2: ssh_set_newkeys: mode 0 [preauth]
+debug1: rekey in after 4294967296 blocks [preauth]
+debug2: KEX algorithms: mlkem768x25519-sha256,ext-info-s,kex-strict-s-v00@openssh.com [preauth]
+debug2: host key algorithms: rsa-sha2-512,rsa-sha2-256,ecdsa-sha2-nistp256,ssh-ed25519 [preauth]
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr [preauth]
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr [preauth]
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1 [preauth]
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1 [preauth]
+debug2: compression ctos: none,zlib@openssh.com [preauth]
+debug2: compression stoc: none,zlib@openssh.com [preauth]
+debug2: languages ctos:  [preauth]
+debug2: languages stoc:  [preauth]
+debug2: first_kex_follows 0  [preauth]
+debug2: reserved 0  [preauth]
+debug1: KEX done [preauth]
+debug3: receive packet: type 7 [preauth]
+debug1: SSH2_MSG_EXT_INFO received [preauth]
+debug3: kex_input_ext_info: extension ext-info-in-auth@openssh.com [preauth]
+debug1: kex_ext_info_check_ver: ext-info-in-auth@openssh.com=<0> [preauth]
+debug3: receive packet: type 5 [preauth]
+debug3: send packet: type 6 [preauth]
+debug3: receive packet: type 50 [preauth]
+debug1: userauth-request for user projjwalraj707 service ssh-connection method none [preauth]
+debug1: attempt 0 failures 0 [preauth]
+debug3: mm_getpwnamallow: entering [preauth]
+debug3: mm_request_send: entering, type 8 [preauth]
+debug3: mm_getpwnamallow: waiting for MONITOR_ANS_PWNAM [preauth]
+debug3: mm_request_receive_expect: entering, type 9 [preauth]
+debug3: mm_request_receive: entering [preauth]
+debug3: mm_request_receive: entering
+debug3: monitor_read: checking request 8
+debug3: mm_answer_pwnamallow: entering
+debug2: parse_server_config_depth: config reprocess config len 3382
+debug3: auth_shadow_acctexpired: today 20278 sp_expire -1 days left -20279
+debug3: account expiration disabled
+debug3: mm_answer_pwnamallow: sending MONITOR_ANS_PWNAM: 1
+debug3: mm_request_send: entering, type 9
+debug2: monitor_read: 8 used once, disabling now
+debug3: server_process_channel_timeouts: setting 0 timeouts [preauth]
+debug3: channel_clear_timeouts: clearing [preauth]
+debug2: input_userauth_request: setting up authctxt for projjwalraj707 [preauth]
+debug3: mm_inform_authserv: entering [preauth]
+debug3: mm_request_send: entering, type 4 [preauth]
+debug1: kex_server_update_ext_info: Sending SSH2_MSG_EXT_INFO [preauth]
+debug3: send packet: type 7 [preauth]
+debug2: input_userauth_request: try method none [preauth]
+debug3: userauth_finish: failure partial=0 next methods="publickey,password,keyboard-interactive" [preauth]
+debug3: send packet: type 51 [preauth]
+debug3: mm_request_receive: entering
+debug3: monitor_read: checking request 4
+debug3: mm_answer_authserv: service=ssh-connection, style=
+debug2: monitor_read: 4 used once, disabling now
+debug3: receive packet: type 50 [preauth]
+debug1: userauth-request for user projjwalraj707 service ssh-connection method keyboard-interactive [preauth]
+debug1: attempt 1 failures 0 [preauth]
+debug2: input_userauth_request: try method keyboard-interactive [preauth]
+debug1: keyboard-interactive devs  [preauth]
+debug1: auth2_challenge: user=projjwalraj707 devs= [preauth]
+debug1: kbdint_alloc: devices '' [preauth]
+debug2: auth2_challenge_start: devices  [preauth]
+debug3: user_specific_delay: user specific delay 0.901ms [preauth]
+debug3: ensure_minimum_time_since: elapsed 0.041ms, delaying 5.860ms (requested 5.901ms) [preauth]
+debug3: userauth_finish: failure partial=0 next methods="publickey,password,keyboard-interactive" [preauth]
+debug3: send packet: type 51 [preauth]
+debug3: receive packet: type 50 [preauth]
+debug1: userauth-request for user projjwalraj707 service ssh-connection method password [preauth]
+debug1: attempt 2 failures 1 [preauth]
+debug2: input_userauth_request: try method password [preauth]
+debug3: mm_auth_password: entering [preauth]
+debug3: mm_request_send: entering, type 12 [preauth]
+debug3: mm_auth_password: waiting for MONITOR_ANS_AUTHPASSWORD [preauth]
+debug3: mm_request_receive_expect: entering, type 13 [preauth]
+debug3: mm_request_receive: entering [preauth]
+debug3: mm_request_receive: entering
+debug3: monitor_read: checking request 12
+debug3: auth_shadow_pwexpired: today 20278 sp_lstchg 20272 sp_max 99999
+debug3: mm_answer_authpassword: sending result 1
+debug3: mm_answer_authpassword: sending result 1
+debug3: mm_request_send: entering, type 13
+Accepted password for projjwalraj707 from 127.0.0.1 port 38384 ssh2
+debug1: monitor_child_preauth: user projjwalraj707 authenticated by privileged process
+debug3: mm_get_keystate: Waiting for new keys
+debug3: mm_request_receive_expect: entering, type 26
+debug3: mm_request_receive: entering
+debug3: mm_get_keystate: GOT new keys
+debug3: mm_auth_password: user authenticated [preauth]
+debug3: user_specific_delay: user specific delay 0.901ms [preauth]
+debug3: ensure_minimum_time_since: elapsed 21.058ms, delaying 2.547ms (requested 5.901ms) [preauth]
+debug3: send packet: type 52 [preauth]
+debug3: mm_request_send: entering, type 26 [preauth]
+debug3: mm_send_keystate: Finished sending state [preauth]
+debug1: monitor_read_log: child log fd closed
+User child is on pid 507
+debug1: permanently_set_uid: 1000/1000
+debug3: monitor_apply_keystate: packet_set_state
+debug2: ssh_set_newkeys: mode 0
+debug1: rekey in after 4294967296 blocks
+debug2: ssh_set_newkeys: mode 1
+debug1: rekey out after 4294967296 blocks
+debug1: ssh_packet_set_postauth: called
+debug3: ssh_packet_set_state: done
+debug3: notify_hostkeys: key 0: ssh-rsa SHA256:tZI7yc4iXlsvGfd9DSJmdWGCcxsRVE1xwuq1D9O/BZM
+debug3: notify_hostkeys: key 1: ecdsa-sha2-nistp256 SHA256:AKhkG/MYkmRtiPmPHEWzDBUE23yXTXmhjnGAFc44OaY
+debug3: notify_hostkeys: key 2: ssh-ed25519 SHA256:gXI02X+1X3XfVAwZNIqi6EZp6aH86MEuETjOoGXPuhY
+debug3: notify_hostkeys: sent 3 hostkeys
+debug3: send packet: type 80
+debug1: active: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug1: Entering interactive session for SSH2.
+debug1: server_init_dispatch
+debug3: receive packet: type 90
+debug1: server_input_channel_open: ctype session rchan 0 win 1048576 max 16384
+debug1: input_session_request
+debug1: channel 0: new session [server-session] (inactive timeout: 0)
+debug2: session_new: allocate (allocated 0 max 10)
+debug3: session_unused: session id 0 unused
+debug1: session_new: session 0
+debug1: session_open: channel 0
+debug1: session_open: session 0: link with channel 0
+debug1: server_input_channel_open: confirm session
+debug3: send packet: type 91
+debug3: receive packet: type 98
+debug1: server_input_channel_req: channel 0 request exec reply 0
+debug1: session_by_channel: session 0 channel 0
+debug1: session_input_channel_req: session 0 req exec
+debug2: channel_set_xtype: labeled channel 0 as session:command (inactive timeout 0)
+Starting session: command for projjwalraj707 from 127.0.0.1 port 38384 id 0
+debug2: fd 6 setting TCP_NODELAY
+debug3: set_sock_tos: set socket 6 IP_TOS 0x20
+debug2: fd 11 setting O_NONBLOCK
+debug2: fd 10 setting O_NONBLOCK
+debug2: fd 13 setting O_NONBLOCK
+debug2: channel 0: read 268 from efd 13
+debug2: channel 0: rwin 1048576 elen 268 euse 1
+debug2: channel 0: sent ext data 268
+debug2: channel 0: read failed rfd 11 maxlen 32768: Broken pipe
+debug2: channel 0: read failed
+debug2: chan_shutdown_read: channel 0: (i0 o0 sock -1 wfd 11 efd 13 [read])
+debug2: channel 0: input open -> drain
+debug2: channel 0: read 0 from efd 13
+debug2: channel 0: closing read-efd 13
+debug2: channel 0: ibuf empty
+debug2: channel 0: send eof
+debug3: send packet: type 96
+debug2: channel 0: input drain -> closed
+debug1: Received SIGCHLD.
+debug1: session_by_pid: pid 509
+debug2: channel 0: request exit-status confirm 0
+debug3: send packet: type 98
+debug1: session_exit_message: session 0 channel 0 pid 509 exit 0
+debug1: session_exit_message: release channel 0
+debug2: channel 0: write failed
+debug2: chan_shutdown_write: channel 0: (i3 o0 sock -1 wfd 10 efd -1 [closed])
+debug2: channel 0: send eow
+debug2: channel 0: output open -> closed
+debug2: channel 0: send_close2
+debug2: channel 0: send close for remote id 0
+debug3: send packet: type 97
+debug3: channel 0: will not send data after close
+debug3: receive packet: type 97
+debug2: channel 0: rcvd close
+debug3: channel 0: will not send data after close
+debug2: channel 0: is dead
+debug2: channel 0: gc: notify user
+debug1: session_by_channel: session 0 channel 0
+debug1: session_close_by_channel: channel 0 child 0
+Close session: user projjwalraj707 from 127.0.0.1 port 38384 id 0
+debug3: session_unused: session id 0 unused
+debug2: channel 0: gc: user detached
+debug2: channel 0: is dead
+debug2: channel 0: garbage collecting
+debug1: channel 0: free: server-session, nchannels 1
+debug3: channel 0: status: The following connections are open:
+  #0 server-session (t4 [session:command] r0 nm0 i3/0 o3/0 e[closed]/0 fd -1/-1/-1 sock -1 cc -1 nc0 io 0x00/0x00)
+
+Connection closed by 127.0.0.1 port 38384
+debug1: do_cleanup
+Transferred: sent 3960, received 2456 bytes
+Closing connection to 127.0.0.1 port 38384

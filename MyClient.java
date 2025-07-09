@@ -9,7 +9,7 @@ public class MyClient {
 		String HOST = "127.0.0.1";
 		int PORT = 22;
 		String USERNAME = "projjwalraj707";
-		String PASSWORD = "password";
+		String PASSWORD = "somePassword";
 
 		JSch jsch = new JSch();
 		Session session = jsch.getSession(USERNAME, HOST, PORT);
