@@ -1,0 +1,2 @@
+- name: CBOMkit-action
+  uses: PQCA/cbomkit-action@v2.1.0
